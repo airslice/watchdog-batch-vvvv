@@ -16,7 +16,7 @@ But if you use hardware like camera or multiple output graphy card it may be imp
 
 * Set the delay time:
 
-    ping 1 -n 10 -w 1000 2>nul 1>nul
+        ping 1 -n 10 -w 1000 2>nul 1>nul
 
 The number after -n actually is the seconds. Now it's 10 seconds delay and you can change it to any number you like.
 
@@ -26,8 +26,8 @@ This batch can help watching vvvv.exe running. It will search the process for vv
 
 * Set the scan time:
 
-    ping 1 -n 30 -w 1000 2>nul 1>nul
-    tasklist | find /C "vvvv.exe" > ofsid.txt
+        ping 1 -n 30 -w 1000 2>nul 1>nul
+        tasklist | find /C "vvvv.exe" > ofsid.txt
 
 Also the number after -n in line 11. Now it scans every 30 seconds.
 
@@ -37,7 +37,7 @@ This batch allows you to watch more than one vvvv programs. Notice that the vvvv
 
 * Set the program numbers:
 
-    if "%num%" == "2"
+        if "%num%" == "2"
 
 It's the number in line 20.
 
